@@ -1,0 +1,211 @@
+/* Importing fonts from assets file */
+
+@font-face {
+    font-family: ProximaNova_Bold;
+    src: url("../assets/_fonts/Proxima_nova/Proxima\ Nova\ Bold.ttf");
+}
+
+@font-face {
+    font-family: ProximaNova_light;
+    src: url("../assets/_fonts/Proxima_nova/Proxima\ Nova\ Light.ttf");
+}
+
+@font-face {
+    font-family: ProximaNova_reg;
+    src: url("../assets/_fonts/Proxima_nova/Proxima\ Nova\ Reg.ttf");
+}
+
+@font-face {
+    font-family: Guttie_reg;
+    src: url("../assets/_fonts/Guttie/OpenType-TT/Guttie.ttf");
+}
+
+/* Importing fonts from assets file */
+
+/* Basic css */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: ProximaNova_reg !important;
+    background-color: #005267;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Guttie_reg !important;
+}
+
+/* Basic css */
+
+/* Main CSS starts here */
+
+.maincontent {
+    min-height: 80vh;
+    padding: 60px 20px 0px 20px;
+    background-image: url('../assets/_images/bgImg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.logos {
+    overflow: hidden;
+}
+
+.arrowImg2 {
+    margin: 20px 20px 0px 0px;
+}
+
+
+.textInfos {
+    text-align: center;
+    padding: 70px 0px;
+    max-width: 1000px;
+}
+
+.textInfos h1 {
+    font-size: 100px;
+    line-height: 110px;
+    color: #FFEED8;
+}
+
+.textInfos p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF !important;
+    font-family: ProximaNova_light !important;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.callToAction {
+    max-width: 700px;
+    background-color: #1D333C;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex !important;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 60px !important;
+    text-decoration: none !important;
+}
+
+.callToAction a {
+    text-decoration: none !important;
+}
+
+.callToAction h3 {
+    font-size: 24px;
+    font-family: ProximaNova_bold !important;
+    color: white;
+    text-align: left !important;
+    margin-top: 10px;
+}
+
+.callBtn {
+    padding: 15px 25px;
+    background-color: #C9A17F;
+    font-family: ProximaNova_bold !important;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    text-align: right;
+}
+
+.callBtn:hover {
+    padding: 15px 25px;
+    background-color: #9c8067;
+    font-family: ProximaNova_bold !important;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    transition: 0.3s linear;
+}
+
+
+/* Footer CSS */
+
+footer {
+    background-color: #1D333C;
+    min-height: 20vh;
+    padding: 40px 20px;
+    color: white;
+    font-family: ProximaNova_bold !important;
+}
+
+footer h5 {
+    font-family: ProximaNova_bold !important;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: ProximaNova_light !important;
+    margin-bottom: 20px;
+    color: #8E999D;
+}
+
+.contctCol {
+    margin-left: 30px;
+}
+
+
+/* responsive css */
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (max-width: 767px) {
+
+    .textInfos h1 {
+        font-size: 55px;
+        line-height: 65px;
+        color: #FFEED8;
+    }
+
+    .contctCol {
+        margin-left: 0px;
+    }
+
+    .textInfos p {
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF !important;
+        font-family: ProximaNova_light !important;
+        margin: 30px auto;
+    }
+
+    .callToAction h3 {
+        font-size: 24px;
+        font-family: ProximaNova_bold !important;
+        color: white;
+        text-align: center !important;
+    }
+
+    .callBtn {
+        padding: 15px 25px;
+        background-color: #C9A17F;
+        font-family: ProximaNova_bold !important;
+        border: none;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+}
